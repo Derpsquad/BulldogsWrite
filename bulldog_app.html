@@ -1,0 +1,25 @@
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <title>cat_app</title>
+</head>
+
+<body>
+    <div id = "container">
+        <div id = "content">
+        <h1>Write for bulldogs!</h1>
+        <p id = "firstp">(New bulldog every 10 words)</p>
+        <p>(Only 3 pictures to choose from now)</p>
+        <textarea id = "writearea" cols = "100" rows = "30"></textarea>
+        {{> count}}    
+        </div>
+        <div id = "picture-div">
+            <img id = "bulldogPic" src = "{{picture}}"/>
+        </div>
+    </div>
+</body>
+
+<template name="count">
+  <p>Word Count: {{word_count}}</p>
+</template>
+
+
